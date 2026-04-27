@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anvay Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <a href="#" class="logo" aria-label="Homepage">
+            <span class="logo-mark">AG</span>
+            <span class="logo-text">Anvay Gulave</span>
+        </a>
+
+        <div class="nav-actions">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/anvay-gulave" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.94 8.5H3.56v11h3.38v-11ZM5.25 3A1.96 1.96 0 0 0 3.3 4.96c0 1.08.87 1.96 1.95 1.96h.02a1.96 1.96 0 0 0-.02-3.92ZM20.7 13.2c0-3.31-1.77-4.85-4.13-4.85-1.9 0-2.76 1.05-3.24 1.8V8.5H9.96c.05 1.1 0 11 0 11h3.37v-6.15c0-.33.02-.66.12-.9.26-.66.87-1.35 1.88-1.35 1.32 0 1.85 1 1.85 2.46v5.94h3.37v-6.3Z"/>
+                    </svg>
+                </a>
+            </div>
+            <a href="assets/pdf/resume_anvay.pdf" download class="resume-btn">
+    Download Resume
+</a>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Valuation &amp; Financial Modeling for<br><span>Better Decision-Making</span></h1>
+        <h2>Finance student focused on valuation and financial modeling.</h2>
+
+        <p>
+            I build structured financial models, analyze companies, and break down complex financial data
+            to derive clear investment insights.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn-primary">View My Work</a>
+            <a href="#about" class="btn-secondary">Get In Touch</a>
+        </div>
+
+        <div class="skills">
+            <a href="#projects" class="skill-tag">Excel</a>
+            <a href="#dashboards" class="skill-tag">Power BI</a>
+            <a href="#sql" class="skill-tag">SQL</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="browser-frame" aria-label="Financial dashboard preview frame">
+            <div class="browser-topbar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+            </div>
+            <div class="browser-content">
+                <img src="assets/images/model.png" alt="Financial dashboard preview">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="projects" id="projects">
+    <h2>Featured Financial Models</h2>
+
+    <div class="project-grid">
+
+        <!-- DCF -->
+        <a class="project-card" href="assets/excel/dcf-valuation-cipla.xlsx" download>
+            <img src="assets/images/dcf.png" alt="">
+            <h3>DCF Valuation – Cipla</h3>
+            <p>Full DCF model with projections, WACC, terminal value and sensitivity analysis.</p>
+            <span class="project-card-cta">Download Model <span class="cta-arrow" aria-hidden="true">→</span></span>
+        </a>
+
+        <!-- LBO -->
+        <a class="project-card" href="assets/excel/lbo-model-vedant-fashion.xlsx" download>
+            <img src="assets/images/lbo.png" alt="">
+            <h3>LBO Model – Vedant Fashion</h3>
+            <p>Leveraged buyout model with IRR analysis, debt schedule and exit scenarios.</p>
+            <span class="project-card-cta">Download Model <span class="cta-arrow" aria-hidden="true">→</span></span>
+        </a>
+
+        <!-- 3 STATEMENT -->
+        <a class="project-card" href="assets/excel/3-statement-model-nestle-india.xlsx" download>
+            <img src="assets/images/3statement.png" alt="">
+            <h3>3 Statement Model – Nestle India</h3>
+            <p>Integrated 3-statement financial model with forecasting and ratio analysis.</p>
+            <span class="project-card-cta">Download Model <span class="cta-arrow" aria-hidden="true">→</span></span>
+        </a>
+
+        <!-- SOTP -->
+        <a class="project-card" href="assets/excel/sotp-valuation-jm-financial.xlsx" download>
+            <img src="assets/images/sotp.png" alt="">
+            <h3>SOTP Valuation – JM Financial</h3>
+            <p>Sum-of-the-parts valuation with segment-wise breakdown and analysis.</p>
+            <span class="project-card-cta">Download Model <span class="cta-arrow" aria-hidden="true">→</span></span>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- EXCEL MODEL SHOWCASE -->
+<section class="excel-models-section" id="excel-models">
+    <h2>Excel Modeling Showcase</h2>
+    <p class="excel-subtitle">Swipe or drag left to explore each model.</p>
+
+    <div class="excel-scroll-wrap">
+        <div class="excel-track" aria-label="Horizontal list of Excel models">
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/5y-forecast-model-dmart.png" alt="5Y Forecast Model DMart cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>5Y Forecast Model - DMart</h3>
+                <p class="excel-model-desc">Quickly understand how DMart grows over time with a clean 5-year financial forecast.</p>
+                <a class="excel-model-download" href="assets/excel/5y-forecast-model-dmart.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/lbo-model-bata.png" alt="LBO Model Bata cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>LBO Model - Bata</h3>
+                <p class="excel-model-desc">A clean LBO model for Bata analyzing returns, leverage and exit valuation.</p>
+                <a class="excel-model-download" href="assets/excel/lbo-model-bata.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/project-finance-model-waste-to-energy.png" alt="Project Finance Model Waste to Energy cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>Project Finance Model - Waste to Energy</h3>
+                <p class="excel-model-desc">Evaluate project viability with detailed revenue, debt schedule, DSCR and IRR analysis.</p>
+                <a class="excel-model-download" href="assets/excel/project-finance-model-waste-to-energy.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/relative-valuation-hul.png" alt="Relative Valuation HUL cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>Relative Valuation - HUL</h3>
+                <p class="excel-model-desc">A relative valuation model comparing HUL with peers using key multiples like P/E and EV/EBITDA.</p>
+                <a class="excel-model-download" href="assets/excel/relative-valuation-hul.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/dupont-analysis-model.png" alt="Dupont Analysis Model cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>Dupont Analysis Model</h3>
+                <p class="excel-model-desc">A DuPont analysis model breaking down ROE into profitability, asset efficiency and leverage.</p>
+                <a class="excel-model-download" href="assets/excel/dupont-analysis-model.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/altman-z-score-model.png" alt="Altman Z Score Model cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>Altman Z Score Model</h3>
+                <p class="excel-model-desc">An Altman Z-Score model assessing financial stability and bankruptcy risk using key balance sheet ratios.</p>
+                <a class="excel-model-download" href="assets/excel/altman-z-score-model.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/value-at-risk-var-model.png" alt="Value at Risk model cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>Value at Risk (VaR) Model</h3>
+                <p class="excel-model-desc">A Value at Risk (VaR) model estimating potential downside using historical data and simulation techniques.</p>
+                <a class="excel-model-download" href="assets/excel/value-at-risk-var-model.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/one-page-profile.png" alt="One Page Profile cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>One Page Profile</h3>
+                <p class="excel-model-desc">A one-page company profile summarizing ITC’s financial performance, profitability and key metrics.</p>
+                <a class="excel-model-download" href="assets/excel/one-page-profile.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/break-even-analysis.png" alt="Break Even Analysis cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>Break Even Analysis</h3>
+                <p class="excel-model-desc">A break-even analysis model identifying the point where revenue covers total costs.</p>
+                <a class="excel-model-download" href="assets/excel/break-even-analysis.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/product-pricing-model.png" alt="Product Pricing Model cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>Product Pricing Model</h3>
+                <p class="excel-model-desc">A product pricing model analyzing cost, selling price and profit margins across products.</p>
+                <a class="excel-model-download" href="assets/excel/product-pricing-model.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/p-and-l-calculator.png" alt="P and L Calculator cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>P&amp;L Calculator</h3>
+                <p class="excel-model-desc">A P&L calculator tracking income, expenses and net profit in a structured format.</p>
+                <a class="excel-model-download" href="assets/excel/p-and-l-calculator.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/budget-tracking.png" alt="Budget Tracking cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>Budget Tracking</h3>
+                <p class="excel-model-desc">A budget tracking model managing income, expenses and savings in a structured format.</p>
+                <a class="excel-model-download" href="assets/excel/budget-tracking.xlsx" download>Download</a>
+            </article>
+
+            <article class="excel-model-card">
+                <span class="excel-tag">Excel / Finance</span>
+                <div class="excel-thumb-slot" aria-hidden="true">
+                    <img src="assets/images/structure-of-financial-statements.png" alt="Structure of Financial Statements cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.textContent='Thumbnail';">
+                </div>
+                <h3>Structure of Financial Statements</h3>
+                <p class="excel-model-desc">A 3-statement model linking income statement, balance sheet and cash flow for complete financial analysis.</p>
+                <a class="excel-model-download" href="assets/excel/structure-of-financial-statements.xlsx" download>Download</a>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- M&A CASE STUDIES -->
+<section class="ma-section" id="ma">
+
+    <h2>M&A Case Studies</h2>
+
+    <div class="ma-grid">
+
+        <!-- CASE 1 -->
+        <div class="ma-card">
+
+            <div class="ma-image">
+                <img src="assets/images/tcpl.png" alt="TCPL and Epigamia case study cover">
+            </div>
+
+            <div class="ma-content">
+                <h3>TCPL × Epigamia Deal</h3>
+                <p>Includes Pitch Deck and Valuation Model</p>
+
+                <ul>
+                    <li>Pitch Deck (PDF)</li>
+                    <li>Valuation Model</li>
+                </ul>
+
+                <div class="ma-actions">
+                    <a class="ma-btn ma-btn-secondary" href="assets/pdf/tcpl-epigamia-pitch-deck.pdf" download>Download PDF</a>
+                    <a class="ma-btn ma-btn-primary" href="assets/excel/tcpl-epigamia-valuation-model.xlsx" download>Download Excel</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CASE 2 -->
+        <div class="ma-card">
+
+            <div class="ma-image">
+                <img src="assets/images/dil.png" alt="DIL and SFIL merger case study cover">
+            </div>
+
+            <div class="ma-content">
+                <h3>DIL × SFIL Merger</h3>
+                <p>Merger analysis with financial impact assessment</p>
+
+                <ul>
+                    <li>Pitch Deck (PDF)</li>
+                    <li>Merger Model</li>
+                </ul>
+
+                <div class="ma-actions">
+                    <a class="ma-btn ma-btn-secondary" href="assets/pdf/dil-sfil-pitch-deck.pdf" download>Download PDF</a>
+                    <a class="ma-btn ma-btn-primary" href="assets/excel/dil-sfil-merger-model.xlsx" download>Download Excel</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- POWER BI DASHBOARDS -->
+<section class="dashboard-section" id="dashboards">
+
+    <h2>Power BI Dashboards</h2>
+
+    <div class="dashboard-grid">
+
+        <!-- CARD 1 -->
+        <div class="dashboard-card">
+            <img src="assets/images/zomato.png" alt="">
+            <h3>Zomato Insights Dashboard</h3>
+            <p>Sales trends, customer behavior and KPI tracking.</p>
+            <a class="dashboard-download" href="assets/powerbi/zomato-insights-dashboard.pbix" download>Download Dashboard</a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="dashboard-card">
+            <img src="assets/images/hospital.png" alt="">
+            <h3>Hospital Dashboard</h3>
+            <p>Patient flow, revenue analysis and operational KPIs.</p>
+            <a class="dashboard-download" href="assets/powerbi/hospital-dashboard.pbix" download>Download Dashboard</a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="dashboard-card">
+            <img src="assets/images/hr.png" alt="">
+            <h3>HR Analysis Dashboard</h3>
+            <p>Employee performance, attrition and workforce analytics.</p>
+            <a class="dashboard-download" href="assets/powerbi/hr-analysis-dashboard.pbix" download>Download Dashboard</a>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="dashboard-card">
+            <img src="assets/images/mobile.png" alt="">
+            <h3>Mobile Sales Dashboard</h3>
+            <p>Sales performance, brand insights and market share.</p>
+            <a class="dashboard-download" href="assets/powerbi/mobile-sales-dashboard.pbix" download>Download Dashboard</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- SQL PROJECTS -->
+<section class="sql-section" id="sql">
+
+    <h2>SQL Data Projects</h2>
+
+    <div class="sql-grid">
+
+        <div class="sql-card">
+            <img src="assets/images/netflix.png" alt="">
+            <h3>Netflix User Analysis</h3>
+            <p>Analyzed user behavior and content trends using SQL queries.</p>
+            <a class="sql-download" href="assets/sql/netflix-user-analysis.sql" download>Download SQL File</a>
+        </div>
+
+        <div class="sql-card">
+            <img src="assets/images/spotify.png" alt="">
+            <h3>Spotify Listening Data</h3>
+            <p>Extracted insights on listening patterns, artists and user preferences.</p>
+            <a class="sql-download" href="assets/sql/spotify-listening-data.sql" download>Download SQL File</a>
+        </div>
+
+        <div class="sql-card">
+            <img src="assets/images/music.png" alt="">
+            <h3>Music Streaming Database</h3>
+            <p>Designed relational database structure for streaming platform.</p>
+            <a class="sql-download" href="assets/sql/music-streaming-database.sql" download>Download SQL File</a>
+        </div>
+
+        <div class="sql-card">
+            <img src="assets/images/zepto.png" alt="">
+            <h3>Zepto Order Management</h3>
+            <p>Database design and queries for order processing and inventory management.</p>
+            <a class="sql-download" href="assets/sql/zepto-order-management.sql" download>Download SQL File</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+
+    <div class="about-container">
+
+        <div class="about-left about-fade-left">
+            <h2 class="about-title">
+                <span class="about-title-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                        <path d="M12 12.5a4.25 4.25 0 1 0 0-8.5 4.25 4.25 0 0 0 0 8.5Zm0 1.75c-4.06 0-7.35 2.75-7.35 6.13 0 .34.28.62.62.62h13.46c.34 0 .62-.28.62-.62 0-3.38-3.29-6.13-7.35-6.13Z"/>
+                    </svg>
+                </span>
+                <span>About Me</span>
+            </h2>
+            <p>
+                I build investment banking-style financial models and valuation analyses across real companies.
+                My work includes 10+ models covering LBO, M&amp;A (Accretion/Dilution), 3-statement modeling,
+                DCF and SOTP valuation - focused on forecasting, capital structure, and deal evaluation.
+                I also complement this with data-driven insights using Excel, Power BI and SQL.
+                NISM Certified Research Analyst (SEBI).
+            </p>
+
+            <div class="about-stats" aria-label="About highlights">
+                <article class="about-stat-card">
+                    <span class="about-stat-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M14.9 3.9H6.7a.7.7 0 0 0-.7.7v14.8c0 .39.31.7.7.7h10.6c.39 0 .7-.31.7-.7V7.9l-3.1-4Zm-.4 1.7 1.7 2.2h-1.2a.5.5 0 0 1-.5-.5V5.6ZM8.4 11.3h7.2v1.3H8.4v-1.3Zm0 3.1h7.2v1.3H8.4v-1.3Zm0-6.2h4.8v1.3H8.4V8.2Z"/>
+                        </svg>
+                    </span>
+                    <h3>10+</h3>
+                    <p>Financial Models</p>
+                </article>
+
+                <article class="about-stat-card">
+                    <span class="about-stat-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M4.8 4h14.4c.44 0 .8.36.8.8v14.4a.8.8 0 0 1-.8.8H4.8a.8.8 0 0 1-.8-.8V4.8c0-.44.36-.8.8-.8Zm.8 1.6v12.8h12.8V5.6H5.6Zm2.2 9.6h1.8v-4.1H7.8v4.1Zm3.2 0h1.8V8.7H11v6.5Zm3.2 0H16v-2.8h-1.8v2.8Z"/>
+                        </svg>
+                    </span>
+                    <h3>4+</h3>
+                    <p>Dashboards</p>
+                </article>
+
+                <article class="about-stat-card">
+                    <span class="about-stat-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M12 3.8c-4.7 0-8 1.62-8 3.7v9c0 2.08 3.3 3.7 8 3.7s8-1.62 8-3.7v-9c0-2.08-3.3-3.7-8-3.7Zm0 1.7c3.98 0 6.3 1.27 6.3 2s-2.32 2-6.3 2-6.3-1.27-6.3-2 2.32-2 6.3-2Zm0 5.7c2.52 0 4.7-.47 6.3-1.34v2.03c0 .73-2.32 2-6.3 2s-6.3-1.27-6.3-2V9.86c1.6.87 3.78 1.34 6.3 1.34Zm0 5.7c2.52 0 4.7-.47 6.3-1.34v1.94c0 .73-2.32 2-6.3 2s-6.3-1.27-6.3-2V15.6c1.6.87 3.78 1.34 6.3 1.34Z"/>
+                        </svg>
+                    </span>
+                    <h3>4+</h3>
+                    <p>SQL Projects</p>
+                </article>
+
+                <article class="about-stat-card">
+                    <span class="about-stat-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M12 4.2a7.8 7.8 0 1 0 7.8 7.8.85.85 0 1 0-1.7 0 6.1 6.1 0 1 1-1.8-4.34l-3.01 3.02a2.3 2.3 0 1 0 1.2 1.2l3.03-3.03A7.75 7.75 0 0 0 12 4.2Zm0 8.9a.95.95 0 1 1 0-1.9.95.95 0 0 1 0 1.9Z"/>
+                        </svg>
+                    </span>
+                    <h3>100%</h3>
+                    <p>Dedication</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="about-right about-fade-right">
+            <h2 class="about-title">
+                <span class="about-title-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                        <path d="M4.5 18.7h15a.8.8 0 0 1 0 1.6h-15a.8.8 0 0 1 0-1.6Zm.9-2.5h2.3V10H5.4v6.2Zm4.3 0H12V7h-2.3v9.2Zm4.3 0h2.3V12H14v4.2Zm4.3 0h2.3V5h-2.3v11.2Z"/>
+                    </svg>
+                </span>
+                <span>Skills</span>
+            </h2>
+
+            <div class="skills-bars" aria-label="Professional skills">
+                <div class="skill-row">
+                    <div class="skill-head">
+                        <span>Excel</span>
+                    </div>
+                    <div class="bar"><span data-skill="97"></span></div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-head">
+                        <span>Financial Modeling</span>
+                    </div>
+                    <div class="bar"><span data-skill="97"></span></div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-head">
+                        <span>Analysis</span>
+                    </div>
+                    <div class="bar"><span data-skill="90"></span></div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-head">
+                        <span>Power BI</span>
+                    </div>
+                    <div class="bar"><span data-skill="75"></span></div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-head">
+                        <span>SQL</span>
+                    </div>
+                    <div class="bar"><span data-skill="60"></span></div>
+                </div>
+            </div>
+
+            <div class="contact-block">
+                <h2 class="about-title">
+                    <span class="about-title-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M4.7 5h14.6c.94 0 1.7.76 1.7 1.7v10.6c0 .94-.76 1.7-1.7 1.7H4.7A1.7 1.7 0 0 1 3 17.3V6.7C3 5.76 3.76 5 4.7 5Zm14.6 1.7H4.7v.14L12 12.2l7.3-5.36V6.7Zm0 10.6V8.95l-6.8 4.99a.85.85 0 0 1-1 0L4.7 8.95v8.35h14.6Z"/>
+                        </svg>
+                    </span>
+                    <span>Contact</span>
+                </h2>
+                <div class="about-contact-actions">
+                    <a class="contact-pill" href="https://mail.google.com/mail/?view=cm&fs=1&to=anvaygulwe@gmail.com&su=Opportunity&body=Hi%20Anvay%2C" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-pill-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M4.8 5h14.4A1.8 1.8 0 0 1 21 6.8v10.4a1.8 1.8 0 0 1-1.8 1.8H4.8A1.8 1.8 0 0 1 3 17.2V6.8A1.8 1.8 0 0 1 4.8 5Zm0 1.6v.03L12 11.9l7.2-5.27V6.6H4.8Zm14.4 10.8V8.6l-6.73 4.93a.8.8 0 0 1-.94 0L4.8 8.6v8.8h14.4Z"/>
+                            </svg>
+                        </span>
+                        <span>Email Me</span>
+                    </a>
+                    <a class="contact-pill" href="https://www.linkedin.com/in/anvay-gulave" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-pill-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M6.15 8.4H3.8v11.8h2.35V8.4Zm-1.17-4.6A1.36 1.36 0 1 0 5 6.52a1.36 1.36 0 0 0-.02-2.72ZM20.2 13.05c0-3.2-1.7-4.69-3.97-4.69-1.83 0-2.66 1.01-3.12 1.72v-1.47h-2.34c.03.97 0 11.59 0 11.59h2.34v-6.47c0-.35.02-.7.13-.95.25-.7.82-1.43 1.78-1.43 1.25 0 1.75 1.05 1.75 2.58v6.27h2.35v-7.15Z"/>
+                            </svg>
+                        </span>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Anvay Portfolio. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
