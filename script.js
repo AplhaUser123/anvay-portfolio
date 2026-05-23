@@ -1,6 +1,11 @@
 const draggableTracks = document.querySelectorAll('.excel-track, .project-grid');
 
 const setupDragScroll = (track) => {
+	const allowDragScroll = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+	if (!allowDragScroll) {
+		return;
+	}
+
 	let isDragging = false;
 	let startX = 0;
 	let startScrollLeft = 0;

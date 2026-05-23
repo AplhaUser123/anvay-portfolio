@@ -494,6 +494,14 @@ body::before {
     user-select: none;
 }
 
+@media (pointer: coarse) {
+    .project-grid,
+    .excel-track {
+        touch-action: auto;
+        scroll-snap-type: x proximity;
+    }
+}
+
 .excel-model-card {
     flex: 0 0 clamp(245px, 24vw, 300px);
     min-height: 360px;
