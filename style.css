@@ -671,8 +671,49 @@ body::before {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+    .projects {
+        padding: 60px 20px;
+    }
+
+    .projects h2 {
+        margin-bottom: 16px;
+        font-size: 1.55rem;
+    }
+
     .project-grid {
-        grid-auto-columns: min(84vw, 320px);
+        grid-auto-columns: min(86vw, 320px);
+        gap: 18px;
+        padding: 10px 4px 20px;
+    }
+
+    .project-card {
+        padding: 18px;
+        gap: 12px;
+        min-height: 340px;
+        border-radius: 14px;
+    }
+
+    .project-card img {
+        border-radius: 10px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+    .project-card h3 {
+        margin: 0;
+        font-size: 1.05rem;
+        line-height: 1.35;
+    }
+
+    .project-card p {
+        margin: 0;
+        font-size: 0.93rem;
+        line-height: 1.5;
+    }
+
+    .project-card-cta {
+        margin-top: auto;
+        font-weight: 600;
     }
 
     .excel-models-section {
