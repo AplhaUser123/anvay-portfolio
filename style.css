@@ -681,23 +681,25 @@ body::before {
     }
 
     .project-grid {
-        grid-auto-columns: min(86vw, 320px);
+        grid-auto-columns: min(90vw, 340px);
         gap: 18px;
         padding: 10px 4px 20px;
     }
 
     .project-card {
-        padding: 18px;
+        padding: 16px;
         gap: 12px;
         min-height: 340px;
         border-radius: 14px;
     }
 
     .project-card img {
-        border-radius: 10px;
+        border-radius: 12px;
         aspect-ratio: 16 / 9;
         object-fit: contain;
-        background: #ffffff;
+        background: #f7f9fc;
+        border: 1px solid #e1e7f0;
+        box-shadow: 0 6px 14px rgba(15, 38, 72, 0.08);
     }
 
     .project-card h3 {
