@@ -1,6 +1,6 @@
-const excelTrack = document.querySelector('.excel-track');
+const draggableTracks = document.querySelectorAll('.excel-track, .project-grid');
 
-if (excelTrack) {
+const setupDragScroll = (track) => {
 	let isDragging = false;
 	let startX = 0;
 	let startScrollLeft = 0;
@@ -15,8 +15,8 @@ if (excelTrack) {
 		return Boolean(element.closest('a, button, input, textarea, select, label'));
 	};
 
-	excelTrack.addEventListener('pointerdown', (event) => {
-		if (isInteractiveElement(event.target)) {
+	track.addEventListener('pointerdown', (event) => {
+		if (event.pointerType === 'touch' || isInteractiveElement(event.target)) {
 			return;
 		}
 
@@ -24,12 +24,12 @@ if (excelTrack) {
 		dragPointerId = event.pointerId;
 		isPotentialClick = true;
 		startX = event.clientX;
-		startScrollLeft = excelTrack.scrollLeft;
-		excelTrack.classList.add('is-dragging');
-		excelTrack.setPointerCapture(event.pointerId);
+		startScrollLeft = track.scrollLeft;
+		track.classList.add('is-dragging');
+		track.setPointerCapture(event.pointerId);
 	});
 
-	excelTrack.addEventListener('pointermove', (event) => {
+	track.addEventListener('pointermove', (event) => {
 		if (!isDragging || event.pointerId !== dragPointerId) {
 			return;
 		}
@@ -39,7 +39,7 @@ if (excelTrack) {
 			isPotentialClick = false;
 		}
 
-		excelTrack.scrollLeft = startScrollLeft - (distance * 1.15);
+		track.scrollLeft = startScrollLeft - (distance * 1.15);
 	});
 
 	const stopDragging = (event) => {
@@ -49,10 +49,10 @@ if (excelTrack) {
 
 		isDragging = false;
 		dragPointerId = null;
-		excelTrack.classList.remove('is-dragging');
+		track.classList.remove('is-dragging');
 
-		if (excelTrack.hasPointerCapture(event.pointerId)) {
-			excelTrack.releasePointerCapture(event.pointerId);
+		if (track.hasPointerCapture(event.pointerId)) {
+			track.releasePointerCapture(event.pointerId);
 		}
 
 		if (!isPotentialClick) {
@@ -60,10 +60,14 @@ if (excelTrack) {
 		}
 	};
 
-	excelTrack.addEventListener('pointerup', stopDragging);
-	excelTrack.addEventListener('pointercancel', stopDragging);
-	excelTrack.addEventListener('pointerleave', stopDragging);
-}
+	track.addEventListener('pointerup', stopDragging);
+	track.addEventListener('pointercancel', stopDragging);
+	track.addEventListener('pointerleave', stopDragging);
+};
+
+draggableTracks.forEach((track) => {
+	setupDragScroll(track);
+});
 
 const aboutContainer = document.querySelector('.about-container');
 
